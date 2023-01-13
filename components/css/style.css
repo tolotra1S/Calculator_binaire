@@ -1,0 +1,27 @@
+body{
+    background-color: whitesmoke;
+}
+#output{
+    background-color: gray;
+    margin-top: -20px;
+    width: 100%;
+    border: 1px solid red;
+}
+.container{
+    background-color: white;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-bottom: 100px;
+}
+.output1{
+    background-color: gray;
+    
+}
+.output1 input{
+    width: 495px;
+}
+.container-calcul{
+    border: 10px solid black;
+    position: sticky;
+top: 20px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="components/css/style.css">
+        <title>Calculator Binaire</title>
+        
+    </head>
+  
+    <body>
+            <div class="container">
+                <h1>Binary Calculator</h1>
+                <div class="output1"><input type="text"></div>
+                <div id="output"></div>
+                <div class="container-calcul">
+                    <div class="">
+                        <div class="">
+                            <button type="button" 
+                                    class="btn btn-light" 
+                                    onclick="input('0')">0</button>
+                            <button type="button" 
+                                    class="btn btn-light" 
+                                    onclick="input('1')">1</button>
+                            <button type="button" 
+                                    class="btn btn-danger float-right ml-2" 
+                                    onclick="cls()">AC</button>
+                            <button type="button" 
+                                    class="btn btn-warning float-right" 
+                                    onclick="backspace()">←</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="operator">
+                            <button type="button" 
+                                    class="btn btn-info" 
+                                    onclick="input('+')">+</button>
+                            <button type="button"
+                                    class="btn btn-info" 
+                                    onclick="input('-')">-</button>
+                            <button type="button" 
+                                    class="btn btn-info" 
+                                    onclick="input('*')">*</button>
+                            <button type="button" 
+                                    class="btn btn-info" 
+                                    onclick="input('/')">/</button>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="">
+                            <button type="button" 
+                                    class="btn btn-success" 
+                                    onclick="calculate()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+<script src="components/js/app.js"></script>
+  
+    </body>
+</html
