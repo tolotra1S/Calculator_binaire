@@ -3,55 +3,70 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="components/css/style.css">
-        <title>Calculator Binaire</title>
+        <title>Calculatrice Binaire</title>
         
     </head>
   
     <body>
             <div class="container">
-                <h1>Binary Calculator</h1>
-                <div class="output1"><input type="text"></div>
+                <h1>Calcutrice binaire</h1>
                 <div id="output"></div>
                 <div class="container-calcul">
                     <div class="">
                         <div class="">
-                            <button type="button" 
-                                    class="btn btn-light" 
-                                    onclick="input('0')">0</button>
-                            <button type="button" 
-                                    class="btn btn-light" 
-                                    onclick="input('1')">1</button>
+                            
                             <button type="button" 
                                     class="btn btn-danger float-right ml-2" 
-                                    onclick="cls()">AC</button>
+                                    onclick="cls()"
+                                    data-key="2">AC</button>
+                            
+                                    <button type="button" 
+                                    class="" 
+                                    onclick="input('0')"
+                                    data-key="0">0</button>
                             <button type="button" 
-                                    class="btn btn-warning float-right" 
-                                    onclick="backspace()">←</button>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="operator">
-                            <button type="button" 
-                                    class="btn btn-info" 
-                                    onclick="input('+')">+</button>
-                            <button type="button"
-                                    class="btn btn-info" 
-                                    onclick="input('-')">-</button>
-                            <button type="button" 
-                                    class="btn btn-info" 
-                                    onclick="input('*')">*</button>
-                            <button type="button" 
-                                    class="btn btn-info" 
-                                    onclick="input('/')">/</button>
+                                    class="" 
+                                    onclick="input('1')"
+                                    data-key="1">1</button>
                         </div>
                     </div>
                     <div class="">
                         <div class="">
+                            
                             <button type="button" 
-                                    class="btn btn-success" 
-                                    onclick="calculate()">Calculate</button>
+                                    class="btn btn-warning float-right" 
+                                    onclick="backspace()"
+                                    data-key="3">←</button>
+                                    <button type="button" 
+                                    class="" 
+                                    onclick="input('+')"
+                                    data-key="3">+</button>
+                            <button type="button"
+                                    class="" 
+                                    onclick="input('-')"
+                                    data-key="3">-</button>
+                                    
                         </div>
                     </div>
+                    <div>
+                        <div class="operator">
+                            
+                            <button type="button" 
+                                    class="btn" 
+                                    onclick="input('*')"
+                                    data-key="4">*</button>
+                            <button type="button" 
+                                    class="btn" 
+                                    onclick="input('/')"
+                                    data-key="4">/</button>
+                            <button type="button" 
+                                    class="btn" 
+                                    onclick="calculate()"
+                                    data-key="5">=</button>
+                        </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         
